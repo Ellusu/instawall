@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#menu {
+    position: fixed;
+    right: 25px;
+    z-index: 999;
+}
+
+.result {
+  display: none;
+}
+
+.result h2,
+.result li{
+  text-transform: capitalize;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    #map { position:absolute; top:100px; bottom:50px; width:100%; }
+      h1,h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #header h2 {display: none; visibility: hidden;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.insta{
+    background-size: cover;
+    background-position: center;
+}
+
+#new-body {
+    background: rgba(254,254,254,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#footer-bottom {
+    background: #fff;
+    bottom: 0;
+    position: fixed;
+    padding: 10px;
+}
+
+.wiggle {
+  z-index: 1;
+}
+
+#form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 350px;
+    margin: 0 auto;
+    top: 30vh;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+#form,
+#footer-bottom {
+  z-index: 2;
+}
+
+#form h1{
+    
+}
